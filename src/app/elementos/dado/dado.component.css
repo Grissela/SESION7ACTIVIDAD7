@@ -5,13 +5,21 @@
     padding: 10px 10px;
 }
 .dado{
+    font-family: Arial, Helvetica, sans-serif;
     background-color: black;
     color: white;
+    width: 170px;
+    height: 170px;
     margin: 0 auto;
     margin-top: 30px;
-    width: 120px;
-    height: 50px;
     text-align: center;
-    padding-top: 40px;
-    border-radius: 5px;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
 }
+.dado{animation:rotate-center .6s ease-in-out both}
+
+
+ @keyframes rotate-center{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}
